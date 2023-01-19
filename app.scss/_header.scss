@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  height: 100%;
+  background-image: url(https://media.istockphoto.com/id/1201269213/vector/sakura-cherry-spring-blossoms-composition-realistic.jpg?s=612x612&w=0&k=20&c=qv1m5Mcn9u_eWGX2pQOoQAa7sA-Q7376GBzRpLy-kFU=) 
+}
+
+header {
+  .hd {
+    background-color: $fourthColor;
+    border: 1em solid $fourthColor;
+    border-radius: 20px;
+  }
+  h1 {
+    color: $firstColor;
+    display: flex;
+    justify-content: center;
+  }
+  ul {
+    @media screen and (min-width: 576px) and (max-width: 1680px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      li {
+        padding-right: 1em;
+      }
+      
+    }
+  }
+  li {
+    list-style-type: none;
+    padding-bottom: 0.5em;
+  }
+  a {
+    text-decoration: none;
+    color: $firstColor;
+  }
+}

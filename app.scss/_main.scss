@@ -1,0 +1,41 @@
+main {
+  .firstPic {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    margin-top: 2.5em;
+    display: flex;
+    background-color: $fourthColor;
+    border-radius: 20px;
+    @media screen and (max-width:576px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            cursor: pointer;
+            height: 300px;
+            margin-left: 0;
+        }
+
+    }
+    
+
+    img {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      margin-left: 2em;
+      border-radius: 20px;
+    }
+    h3 {
+      margin-left: 5em;
+      margin-right: 5em;
+      color: $firstColor;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
